@@ -8,7 +8,7 @@ ENV PATH $PATH:/opt/sonar-scanner/bin
 ENV GITCRYPT_VERSION=0.6.0-r1
 ENV SONAR_SCANNER_VERSION=3.3.0.1492-linux
 
-RUN apk update && apk add --no-cache bash jq
+RUN apk update && apk add --no-cache bash jq curl
 
 RUN apk add --no-cache ca-certificates openssl && \
     wget \
